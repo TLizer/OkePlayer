@@ -12,20 +12,30 @@ import AVFoundation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var mainCoordinator: MainCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setupAudioSession()
         setupWindow()
         
         return true
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        mainCoordinator?.handleAppTermination()
+    }
+
+    private func setupAudioSession() {
+        let audioSession = AVAudioSession.sharedInstance()
+        try? audioSession.setCategory(.playback, mode: .moviePlayback)
     }
     
     private func setupWindow() {
         let window = UIWindow()
         self.window = window
         
-        let controller = ViewController()
-        window.rootViewController = controller
-        window.makeKeyAndVisible()
+        mainCoordinator = MainCoordinator(window: window)
+        mainCoordinator?.start()
     }
 }
 
