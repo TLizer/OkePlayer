@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE842E1F29981D5800749C4A /* OkePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842E1E29981D5800749C4A /* OkePlayerTests.swift */; };
 		DD042356256A7F9500FB4E22 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD042355256A7F9500FB4E22 /* Double+Extensions.swift */; };
 		DD042359256A8A6700FB4E22 /* DotSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD042358256A8A6700FB4E22 /* DotSelectorView.swift */; };
 		DD04235C256AE99200FB4E22 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD04235B256AE99200FB4E22 /* PlayerViewModel.swift */; };
@@ -35,7 +36,19 @@
 		DDE759112566F85C001E61F9 /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE759102566F85C001E61F9 /* MovieCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AE842E2029981D5800749C4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDE758EA2566D753001E61F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDE758F12566D753001E61F9;
+			remoteInfo = OkePlayer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AE842E1C29981D5700749C4A /* OkePlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OkePlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE842E1E29981D5800749C4A /* OkePlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkePlayerTests.swift; sourceTree = "<group>"; };
 		DD042355256A7F9500FB4E22 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		DD042358256A8A6700FB4E22 /* DotSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSelectorView.swift; sourceTree = "<group>"; };
 		DD04235B256AE99200FB4E22 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
@@ -67,6 +80,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE842E1929981D5700749C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDE758EF2566D753001E61F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE842E1D29981D5800749C4A /* OkePlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE842E1E29981D5800749C4A /* OkePlayerTests.swift */,
+			);
+			path = OkePlayerTests;
+			sourceTree = "<group>";
+		};
 		DD04235E256B1F4C00FB4E22 /* PropertyWrappers */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				DDE758F42566D753001E61F9 /* OkePlayer */,
+				AE842E1D29981D5800749C4A /* OkePlayerTests */,
 				DDE758F32566D753001E61F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				DDE758F22566D753001E61F9 /* OkePlayer.app */,
+				AE842E1C29981D5700749C4A /* OkePlayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +240,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE842E1B29981D5700749C4A /* OkePlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE842E2429981D5800749C4A /* Build configuration list for PBXNativeTarget "OkePlayerTests" */;
+			buildPhases = (
+				AE842E1829981D5700749C4A /* Sources */,
+				AE842E1929981D5700749C4A /* Frameworks */,
+				AE842E1A29981D5700749C4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE842E2129981D5800749C4A /* PBXTargetDependency */,
+			);
+			name = OkePlayerTests;
+			productName = OkePlayerTests;
+			productReference = AE842E1C29981D5700749C4A /* OkePlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DDE758F12566D753001E61F9 /* OkePlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDE759062566D756001E61F9 /* Build configuration list for PBXNativeTarget "OkePlayer" */;
@@ -233,9 +281,13 @@
 		DDE758EA2566D753001E61F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					AE842E1B29981D5700749C4A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = DDE758F12566D753001E61F9;
+					};
 					DDE758F12566D753001E61F9 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -255,11 +307,19 @@
 			projectRoot = "";
 			targets = (
 				DDE758F12566D753001E61F9 /* OkePlayer */,
+				AE842E1B29981D5700749C4A /* OkePlayerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE842E1A29981D5700749C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDE758F02566D753001E61F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,6 +332,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE842E1829981D5700749C4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE842E1F29981D5800749C4A /* OkePlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDE758EE2566D753001E61F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +373,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AE842E2129981D5800749C4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDE758F12566D753001E61F9 /* OkePlayer */;
+			targetProxy = AE842E2029981D5800749C4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		DDE759002566D756001E61F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -317,6 +393,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AE842E2229981D5800749C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A3C67AMT7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.setmorelite.app.OkePlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OkePlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OkePlayer";
+			};
+			name = Debug;
+		};
+		AE842E2329981D5800749C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A3C67AMT7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.setmorelite.app.OkePlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OkePlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OkePlayer";
+			};
+			name = Release;
+		};
 		DDE759042566D756001E61F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -476,6 +592,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE842E2429981D5800749C4A /* Build configuration list for PBXNativeTarget "OkePlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE842E2229981D5800749C4A /* Debug */,
+				AE842E2329981D5800749C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DDE758ED2566D753001E61F9 /* Build configuration list for PBXProject "OkePlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
