@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE6250E2299A210900FB616E /* PackageWithIntercom in Frameworks */ = {isa = PBXBuildFile; productRef = AE6250E1299A210900FB616E /* PackageWithIntercom */; };
 		AE842E1F29981D5800749C4A /* OkePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842E1E29981D5800749C4A /* OkePlayerTests.swift */; };
 		DD042356256A7F9500FB4E22 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD042355256A7F9500FB4E22 /* Double+Extensions.swift */; };
 		DD042359256A8A6700FB4E22 /* DotSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD042358256A8A6700FB4E22 /* DotSelectorView.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		AE842E1C29981D5700749C4A /* OkePlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OkePlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE842E1E29981D5800749C4A /* OkePlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkePlayerTests.swift; sourceTree = "<group>"; };
+		AEF41406299A1F3900E835F6 /* PackageWithIntercom */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PackageWithIntercom; path = Packages/PackageWithIntercom; sourceTree = "<group>"; };
 		DD042355256A7F9500FB4E22 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		DD042358256A8A6700FB4E22 /* DotSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSelectorView.swift; sourceTree = "<group>"; };
 		DD04235B256AE99200FB4E22 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
@@ -91,18 +93,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6250E2299A210900FB616E /* PackageWithIntercom in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE6250E0299A210900FB616E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE842E1D29981D5800749C4A /* OkePlayerTests */ = {
 			isa = PBXGroup;
 			children = (
 				AE842E1E29981D5800749C4A /* OkePlayerTests.swift */,
 			);
 			path = OkePlayerTests;
+			sourceTree = "<group>";
+		};
+		AEF41405299A1F3900E835F6 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				AEF41406299A1F3900E835F6 /* PackageWithIntercom */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		DD04235E256B1F4C00FB4E22 /* PropertyWrappers */ = {
@@ -208,9 +226,11 @@
 		DDE758E92566D753001E61F9 = {
 			isa = PBXGroup;
 			children = (
+				AEF41405299A1F3900E835F6 /* Packages */,
 				DDE758F42566D753001E61F9 /* OkePlayer */,
 				AE842E1D29981D5800749C4A /* OkePlayerTests */,
 				DDE758F32566D753001E61F9 /* Products */,
+				AE6250E0299A210900FB616E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,6 +291,9 @@
 			dependencies = (
 			);
 			name = OkePlayer;
+			packageProductDependencies = (
+				AE6250E1299A210900FB616E /* PackageWithIntercom */,
+			);
 			productName = OkePlayer;
 			productReference = DDE758F22566D753001E61F9 /* OkePlayer.app */;
 			productType = "com.apple.product-type.application";
@@ -620,6 +643,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE6250E1299A210900FB616E /* PackageWithIntercom */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PackageWithIntercom;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDE758EA2566D753001E61F9 /* Project object */;
 }

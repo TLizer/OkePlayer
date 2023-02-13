@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import PackageWithIntercom
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
